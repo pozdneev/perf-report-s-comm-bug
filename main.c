@@ -18,9 +18,9 @@ double do_things_main(int i) {
 
 int main() {
     double a, b, c;
-    a = do_things_main(WAIT_TIME * 2);
-    b = do_things1(WAIT_TIME);
-    c = do_things2(WAIT_TIME * 2);
+    a = do_things_main(WAIT_TIME * 2);  // 40% of time, a.out
+    b = do_things1(WAIT_TIME);          // 20% of time, libdo1.so
+    c = do_things2(WAIT_TIME * 2);      // 40% of time, libdo2.so
     puts("OK");
     return (int)(a + b + c);
 }
